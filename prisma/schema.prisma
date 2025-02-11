@@ -7,9 +7,10 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model VoiceDuration {
-  userId       String   @id
-  username     String
-  totalDuration Int
-  sessions     Json[]
+model User {
+	userId		String @id
+	discordId	String
+	discordName	String
+	spotifyId	String
+	sportifyN	String
 }
